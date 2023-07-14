@@ -27,4 +27,5 @@ import AboutCourses from '@/pages/main/MainCourses.vue';
 import AboutBestCourses from '@/pages/main/MainBestCourses.vue';
 import AboutLibraries from '@/pages/main/MainLibraries.vue';
 import PageLayout from '@/layouts/PageLayout/PageLayout.vue';
+import SearchInput from '@/components/SearchInput/SearchInput.vue';
 </script>

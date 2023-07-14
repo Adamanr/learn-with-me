@@ -1,19 +1,32 @@
 <template>
-  <div class="card">
+  <div :class="{ card: true, full: fullContent }">
     <img v-bind:src="photo" class="photo" />
     <div class="body">
-      <div class="title">
-        {{ title }}
+      <div class="main-info">
+        <div class="title">
+          {{ title }}
+        </div>
+        <div class="description">
+          {{ description }}
+        </div>
       </div>
-      <div class="description">
-        {{ description }}
+
+      <div v-if="fullContent">
+        <div class="course-info">
+          <div class="user">от: <span>papich228</span></div>
+          <div class="views">24.000 просмотров</div>
+        </div>
+        <Rating :rating="3" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Rating from '@/components/Rating/Rating.vue';
+
 export default {
+  components: { Rating },
   props: {
     photo: {
       type: String,
@@ -26,6 +39,9 @@ export default {
     description: {
       type: String,
       required: true,
+    },
+    fullContent: {
+      type: Boolean,
     },
   },
 };
@@ -42,6 +58,18 @@ export default {
   cursor: pointer;
   transition: border 0.2s;
 
+  &.full {
+    height: 480px;
+
+    .photo {
+      height: 250px;
+    }
+
+    .body {
+      background: #232832;
+    }
+  }
+
   &:hover {
     border-color: var(--color-tertiary);
   }
@@ -56,6 +84,13 @@ export default {
     padding: 12px;
     border-top: 2px solid var(--border-color);
     transition: border 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+    .main-info {
+    }
 
     .title {
       font-size: 18px;
@@ -65,6 +100,23 @@ export default {
     .description {
       color: #9ca1ac;
       font-size: 14px;
+    }
+  }
+
+  .course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--font-color-gray);
+
+    .user {
+      span {
+        color: var(--font-color-light);
+      }
+    }
+
+    .views {
     }
   }
 }

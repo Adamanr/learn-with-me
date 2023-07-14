@@ -1,11 +1,8 @@
 <script>
-import { VueElement } from 'vue';
-
 export default {
   props: {
     title: {
       type: String,
-      required: true,
     },
   },
 };
@@ -13,7 +10,7 @@ export default {
 
 <template>
   <div class="card">
-    <div class="header">
+    <div v-if="title?.length" class="header">
       <div class="header-title">{{ title }}</div>
       <div class="header-link"></div>
     </div>
@@ -28,6 +25,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  overflow: hidden;
   border: 1px solid var(--border-color);
   background: #232832;
 
