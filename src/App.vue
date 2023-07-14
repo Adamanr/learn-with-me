@@ -1,13 +1,10 @@
 <script setup>
-import Header from './components/Header.vue';
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
+import HeaderLayout from '@/layouts/HeaderLayout/HeaderLayout.vue';
 </script>
 
 <template>
-  <Header />
-
-  <!-- <RouterLink to="/">Home</RouterLink> -->
-
+  <HeaderLayout />
   <RouterView />
 </template>
 

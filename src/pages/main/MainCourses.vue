@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Card from '@/components/Card.vue';
-import CourseCard from '@/components/CourseCard.vue';
+import Card from '@/components/Card/Card.vue';
+import CourseCard from '@/components/CourseCard/CourseCard.vue';
 
 export default {
   components: { CourseCard, Card },

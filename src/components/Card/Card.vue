@@ -28,14 +28,14 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  border: 1px solid #424853;
+  border: 1px solid var(--border-color);
   background: #232832;
 
   .header {
     height: 40px;
 
     .header-title {
-      background: #09c097;
+      background: var(--color-tertiary);
       width: fit-content;
       height: 100%;
       font-size: 18px;

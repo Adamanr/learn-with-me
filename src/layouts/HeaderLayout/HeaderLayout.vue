@@ -5,7 +5,7 @@
     <div class="header border-b-2 border-b-[#B3B3B3] flex">
       <h1 class="flex-1 pt-6 ps-12 text-3xl text-white font-bold">Learn With Me</h1>
       <div class="ms-2 flex p-4">
-        <img class="me-4 p-2" src="../assets/bell.svg" />
+        <img class="me-4 p-2" src="../../assets/bell.svg" />
         <img
           class="h-14 w-14 rounded-lg bg-gray-200"
           src="https://sun9-48.userapi.com/impg/tOX_17XaHfP8hBkC1y7C3WG1D0UzkpEUXgDp2g/TxoyM5xbD1Q.jpg?size=564x564&quality=95&sign=1abfa9d4ab21347c1bf6d81ec8da88be&type=album"

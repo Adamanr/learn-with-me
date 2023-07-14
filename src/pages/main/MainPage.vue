@@ -1,11 +1,11 @@
 <template>
-  <div class="main mt-10 max-w-7xl mx-auto h-full container">
+  <PageLayout>
     <div class="grid">
       <AboutCourses />
       <AboutBestCourses />
     </div>
     <AboutLibraries />
-  </div>
+  </PageLayout>
 </template>
 
 <style lang="scss" scoped>
@@ -23,7 +23,8 @@
 </style>
 
 <script setup>
-import AboutCourses from '@/views/about/AboutCourses.vue';
-import AboutBestCourses from '@/views/about/AboutBestCourses.vue';
-import AboutLibraries from '@/views/about/AboutLibraries.vue';
+import AboutCourses from '@/pages/main/MainCourses.vue';
+import AboutBestCourses from '@/pages/main/MainBestCourses.vue';
+import AboutLibraries from '@/pages/main/MainLibraries.vue';
+import PageLayout from '@/layouts/PageLayout/PageLayout.vue';
 </script>

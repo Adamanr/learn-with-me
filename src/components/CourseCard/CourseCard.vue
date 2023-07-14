@@ -37,13 +37,13 @@ export default {
   flex-direction: column;
   width: 220px;
   border-radius: 5px;
-  border: 2px solid #424853;
+  border: 2px solid var(--border-color);
   overflow: hidden;
   cursor: pointer;
   transition: border 0.2s;
 
   &:hover {
-    border-color: #09c097;
+    border-color: var(--color-tertiary);
   }
 
   .photo {
@@ -54,7 +54,7 @@ export default {
 
   .body {
     padding: 12px;
-    border-top: 2px solid #424853;
+    border-top: 2px solid var(--border-color);
     transition: border 0.2s;
 
     .title {
