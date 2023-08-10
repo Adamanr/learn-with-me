@@ -11,7 +11,7 @@ export default {
 <template>
   <div class="card">
     <div v-if="title?.length" class="header">
-      <div class="header-title">{{ title }}</div>
+      <div class="header-title font-extrabold">{{ title }}</div>
       <div class="header-link"></div>
     </div>
     <div class="flex p-1 gap-1">
@@ -42,7 +42,6 @@ export default {
       clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 0);
       padding-left: 15px;
       padding-right: 20px;
-      font-weight: bold;
       text-transform: capitalize;
       color: #fff;
     }

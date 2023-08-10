@@ -14,11 +14,11 @@
     </div>
     <div class="flex menu ps-10 text-[#B3B3B3]">
       <div class="flex flex-wrap gap-8  text-2xl flex-1">
-        <a href="" class="flex p-2">
+        <a href="/" class="flex p-2">
           <img src="../../assets/home.svg" />
           <p class="ps-2">Главная</p>
         </a>
-        <a href="" class="flex p-2">
+        <a href="/courses" class="flex p-2">
           <img src="../../assets/list.svg" />
           <p class="ps-2">Курсы</p>
         </a>

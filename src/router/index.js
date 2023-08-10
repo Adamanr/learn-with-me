@@ -8,12 +8,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'main',
-      component: MainPage,
+      component: () => import(/* webpackChunkName: "about" */ '../pages/main/MainPage.vue')
     },
     {
       path: '/courses',
       name: 'courses',
-      component: AllCoursesPage,
+      component: () => import(/* webpackChunkName: "about" */ '../pages/course/CoursePage.vue')
     },
   ],
 });
